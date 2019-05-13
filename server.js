@@ -6,6 +6,8 @@ const port = 3000
 const mongoose = require('mongoose')
 const Recippi = require('./models/Recippi.js')
 
+app.set('view engine', 'pug')
+
 app.use('/', express.static('public'))
 
 app.get('/', function (req, res) {
