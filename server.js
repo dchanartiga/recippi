@@ -11,7 +11,7 @@ app.set('view engine', 'pug')
 app.use('/', express.static('public'))
 
 app.get('/', function (req, res) {
-  res.send('hello world')
+  res.render('layout')
 })
 
 app.listen(port, () => console.log(`SERVER IS LISTENING ON PORT ${port}`))
