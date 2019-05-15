@@ -14,4 +14,8 @@ app.get('/', function (req, res) {
   res.render('layout')
 })
 
+app.get('/recipes', function (req, res) {
+  res.render('index')
+})
+
 app.listen(port, () => console.log(`SERVER IS LISTENING ON PORT ${port}`))
