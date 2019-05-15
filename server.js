@@ -14,4 +14,4 @@ app.get('/', function (req, res) {
   res.render('layout')
 })
 
-app.listen(port, () => console.log(`SERVER IS LISTENING ON POORT ${port}`))
+app.listen(port, () => console.log(`SERVER IS LISTENING ON POOOORT ${port}`))
