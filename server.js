@@ -11,11 +11,11 @@ app.set('view engine', 'pug')
 app.use('/', express.static('public'))
 
 app.get('/', function (req, res) {
-  res.render('layout')
+  res.render('index')
 })
 
 app.get('/recipes', function (req, res) {
-  res.render('index')
+  res.render('recipe')
 })
 
 app.listen(port, () => console.log(`SERVER IS LISTENING ON PORT ${port}`))
