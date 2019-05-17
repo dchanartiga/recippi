@@ -9,6 +9,11 @@ const Recippi = require('./models/Recippi.js')
 var PagesController = require('./controllers/pages.js')
 var PostsController = require('./controllers/posts.js')
 
+app.use('/', express.static(path.join(__dirname, 'public')))
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
 app.set('view engine', 'pug')
 
 mongoose.connect('mongodb://localhost:27017/recippi', {useNewUrlParser: true})
