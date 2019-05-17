@@ -18,7 +18,7 @@ exports.newPost = function (req, res) {
     time: req.body.time,
     servings: req.body.servings,
     calories: req.body.calories,
-    content: req.body.content,
+    description: req.body.description,
     notes: req.body.notes,
 
   });
