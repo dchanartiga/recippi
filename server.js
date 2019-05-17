@@ -8,6 +8,8 @@ const Recippi = require('./models/Recippi.js')
 
 app.set('view engine', 'pug')
 
+mongoose.connect('mongodb://127.0.0.1:27017/recippi', {useNewUrlParser: true})
+
 app.use('/', express.static('public'))
 
 app.get('/', function (req, res) {
