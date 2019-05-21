@@ -1,1 +1,34 @@
+@font-face {
+    font-family: 'PlexSansBoldItalic';
+    src: url('/IBMPlexSans-BoldItalic.ttf');
+}
 
+h1#logo {
+  font-size: 72px;
+  text-align: center;
+  font-family: PlexSansBoldItalic;
+}
+
+div#logodiv {
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+h3#sublogo {
+  font-family: PlexSansBoldItalic;
+  text-align: center;
+  font-size: 22px;
+}
+
+p#submitrecipe {
+  font-family: PlexSansBoldItalic;
+  font-size: 22px;
+}
+
+div#sublogodiv {
+  padding-bottom: 40px;
+}
+
+div#formdiv {
+  padding-left: 40px;
+}

@@ -4,36 +4,46 @@ block header
 
 block content
   form(action="/new-post" method="post")
-    div(class='category')
-      label(for='title' class='text-dark') Title:
-      input(type='text' name='title')
-    div(class='category')
-      label(for='content' class='text-dark') Ingredients:
-      textarea(type='text' name='content')
-    div(class='category')
-      label(for='feedback' class='text-dark') Type:
-      textarea(type='text' name='type')
-    div(class='category')
-      label(for='feedback' class='text-dark') Time:
-      textarea(type='text' name='time')
-    div(class='category')
-      label(for='feedback' class='text-dark') Servings:
-      textarea(type='text' name='servings')
-    div(class='category')
-      label(for='feedback' class='text-dark') Calories:
-      textarea(type='text' name='calories')
-    div(class='category')
-      label(for='feedback' class='text-dark') Description:
-      textarea(type='text' name='description')
-    div(class='category')
-      label(for='feedback' class='text-dark') Notes:
-      textarea(type='text' name='notes')
-    div(class='category')
-      button(type='submit' class='btn btn-dark') Submit!
-    div(class='category')
-      // Button trigger modal
-      button.btn.btn-primary(id='modalButton' type='button', data-toggle='modal', data-target='#exampleModal', class='btn btn-dark')
-        | What can I cook?
+    div#formdiv
+      p#submitrecipe Submit a recipe!
+      div(class='category')
+        label(for='title' class='text-dark') Title:
+        br
+        input(type='text' name='title')
+      div(class='category')
+        label(for='content' class='text-dark') Ingredients:
+          br
+          textarea#textbox(type='text' name='content')
+      div(class='category')
+        label(for='feedback' class='text-dark') Type:
+          br
+          textarea(type='text' name='type')
+      div(class='category')
+        label(for='feedback' class='text-dark') Time:
+          br
+          textarea(type='text' name='time')
+      div(class='category')
+        label(for='feedback' class='text-dark') Servings:
+          br
+          textarea(type='text' name='servings')
+      div(class='category')
+        label(for='feedback' class='text-dark') Calories:
+          br
+          textarea(type='text' name='calories')
+      div(class='category')
+        label(for='feedback' class='text-dark') Description:
+          br
+          textarea(type='text' name='description')
+      div(class='category')
+        label(for='feedback' class='text-dark') Notes:
+          br
+          textarea(type='text' name='notes')
+      div(class='category')
+        button(type='submit' class='btn btn-dark') Submit!
+      div(class='category')
+        // Button trigger modal
+        button.btn.btn-primary(id='modalButton' type='button', data-toggle='modal', data-target='#exampleModal', class='btn btn-dark')
+          | What can I cook?
       // Modal
       #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
         .modal-dialog(role='document')
