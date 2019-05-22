@@ -1,17 +1,17 @@
-var Post = require('../models/Recippi.js')
+var Recippi = require('../models/Recippi.js')
 
 exports.allPosts = function (req, res) {
-  Post.find({}, function(err, docs) {
-    console.log(docs)
-    res.render('posts', {posts: docs})
-    console.log('show posts')
+  Recippi.find({}, function(err, recipes) {
+    console.log(recipes)
+    res.render('recipe', {recipes: recipes})
+    console.log('show recipes')
     })
 }
 
 exports.newPost = function (req, res) {
   console.log('NEW POST')
   console.log(req.body)
-  var data = new Post({
+  var data = new Recippi({
     title: req.body.title,
     ingredients: req.body.ingredients,
     type: req.body.type,

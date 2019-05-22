@@ -24,10 +24,9 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
-app.get('/recipes', function (req, res) {
-  res.render('recipe')
-})
+app.get('/recipes', PostsController.allPosts)
 
+app.get('/posts', PostsController.allPosts)
 app.post('/new-post', PostsController.newPost)
 
 app.listen(port, () => console.log(`SERVER IS LISTENING ON PORT ${port}`))
