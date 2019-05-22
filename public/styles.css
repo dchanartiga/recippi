@@ -3,14 +3,29 @@
     src: url('/IBMPlexSans-BoldItalic.ttf');
 }
 
-.navbar-custom {
-    color: #00FFC4;
+#nav {
+  color: black;
+}
+
+.form-control {
+  width: 700px;
+  height: 70px;
+}
+
+button.btn.btn-primary {
+  border-width: 0px;
+  color: black;
+}
+
+.buttondiv {
+  padding-top: 10px;
 }
 
 h1#logo {
   font-size: 72px;
   text-align: center;
   font-family: PlexSansBoldItalic;
+  color: #19FFD5
 }
 
 div#logodiv {
@@ -21,12 +36,12 @@ div#logodiv {
 h3#sublogo {
   font-family: PlexSansBoldItalic;
   text-align: center;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 p#submitrecipe {
   font-family: PlexSansBoldItalic;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 div#sublogodiv {
