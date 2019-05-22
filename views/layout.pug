@@ -2,7 +2,6 @@ html
   head
     title Recippi
     block links
-      link(rel='stylesheet' href='styles.css')
       link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
       script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
@@ -11,10 +10,11 @@ html
       link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
       script(src="http://code.jquery.com/jquery-3.4.1.min.js", integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=", crossorigin="anonymous")
       script(src='main.js')
+      link(rel='stylesheet' href='styles.css')
       body
         div(class='text-primary')
         block nav
-          nav(class= 'navbar navbar-custom bg-dark')
+          nav(class= 'navbar navbar-default' style='background-color: #19FFD5')
             a#nav(class= 'navbar-brand' href= '/') Home
             |
             a#nav(class= 'navbar-brand' href= '/recipes') Recipes
