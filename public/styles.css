@@ -1,20 +1,33 @@
 @font-face {
-    font-family: 'PlexSansBoldItalic';
-    src: url('/IBMPlexSans-BoldItalic.ttf');
+    font-family: 'Kollektif-Bold';
+    src: url('/fonts/Kollektif-Bold.ttf');
 }
 
-#nav {
-  color: black;
+@font-face {
+    font-family: 'Kollektif';
+    src: url('/fonts/Kollektif.ttf');
+}
+
+@font-face {
+    font-family: 'Kollektif-BoldItalic';
+    src: url('/fonts/Kollektif-BoldItalic.ttf');
+}
+
+.kbutton, #nav {
+  font-family: Kollektif-Bold;
+  color: white;
+}
+
+label.text-dark {
+  font-family: Kollektif;
 }
 
 .form-control {
   width: 700px;
-  height: 70px;
 }
 
 button.btn.btn-primary {
   border-width: 0px;
-  color: black;
 }
 
 .buttondiv {
@@ -24,8 +37,8 @@ button.btn.btn-primary {
 h1#logo {
   font-size: 72px;
   text-align: center;
-  font-family: PlexSansBoldItalic;
-  color: #19FFD5
+  font-family: Kollektif-Bold;
+  color: #17E6C0
 }
 
 div#logodiv {
@@ -34,13 +47,13 @@ div#logodiv {
 }
 
 h3#sublogo {
-  font-family: PlexSansBoldItalic;
+  font-family: Kollektif-BoldItalic;
   text-align: center;
   font-size: 30px;
 }
 
 p#submitrecipe {
-  font-family: PlexSansBoldItalic;
+  font-family: Kollektif-Bold;
   font-size: 30px;
 }
 
