@@ -3,6 +3,10 @@
     src: url('/IBMPlexSans-BoldItalic.ttf');
 }
 
+.navbar-custom {
+    color: #00FFC4;
+}
+
 h1#logo {
   font-size: 72px;
   text-align: center;
