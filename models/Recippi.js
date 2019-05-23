@@ -9,6 +9,7 @@ var recippiSchema = mongoose.Schema({
   calories: { type: String, required: false },
   description: { type: String, required: true },
   notes: { type: String, required: false },
+  favorite: { type: Boolean, required: false }
 
 })
 

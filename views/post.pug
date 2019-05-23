@@ -1,0 +1,27 @@
+.largercontainer
+  .largecontainer
+    .postcontainer(class='border border-secondary' class='rounded')
+        .title #{p.title}
+        .ingredients 
+          span.myFont Ingredients:  
+          span.kollektif #{p.ingredients}
+        .type 
+          span.myFont Type: 
+          span.kollektif #{p.type}
+        .time 
+          span.myFont Time: 
+          span.kollektif #{p.time}
+        .servings 
+          span.myFont Servings:
+          span.kollektif #{p.servings}
+        .calories 
+          span.myFont Calories: 
+          span.kollektif #{p.calories}
+        .description 
+          span.myFont Description: 
+          span.kollektif #{p.description}
+        .notes 
+          span.myFont Notes: 
+          span.kollektif #{p.notes}
+        button(class='favorite' data-id=p._id class='kbutton' class='btn' style='background-color: #17E6C0')
+          | Favorite

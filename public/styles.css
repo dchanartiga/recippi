@@ -13,6 +13,35 @@
     src: url('/fonts/Kollektif-BoldItalic.ttf');
 }
 
+.kollektif {
+  font-family: Kollektif;
+}
+
+.postcontainer {
+  padding: 10px;
+}
+
+.largecontainer {
+  width: 100%;
+  padding-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.title {
+  font-family: Kollektif-Bold;
+  font-size: 30px;
+}
+
+.title:hover {
+  color: #17E6C0
+}
+
+.myFont {
+  font-family: Kollektif-Bold;
+  font-size: 20px;
+}
+
 .kbutton, #nav {
   font-family: Kollektif-Bold;
   color: white;

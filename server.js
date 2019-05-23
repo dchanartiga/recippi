@@ -8,6 +8,7 @@ const Recippi = require('./models/Recippi.js')
 
 var PagesController = require('./controllers/pages.js')
 var PostsController = require('./controllers/posts.js')
+var FavoritesController = require('./controllers/favorites.js')
 
 app.use('/', express.static(path.join(__dirname, 'public')))
 
@@ -25,6 +26,10 @@ app.get('/', function (req, res) {
 })
 
 app.get('/recipes', PostsController.allPosts)
+
+app.get('/favorites', FavoritesController.favoritePosts)
+
+app.get('/favorite-recipe/:id', FavoritesController.favoriteRecipes)
 
 app.get('/posts', PostsController.allPosts)
 app.post('/new-post', PostsController.newPost)

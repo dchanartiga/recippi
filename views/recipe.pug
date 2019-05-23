@@ -1,6 +1,6 @@
 script(src='main.js' type='text/html')
-
 link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+include layout.pug
 
 each p in recipes
-  p(id=p._id) Title: #{p.title} | Ingredients: #{p.ingredients} | Type: #{p.type} | Time: #{p.time} | Servings: #{p.servings} | Calories: #{p.calories} | Description: #{p.description} | Notes: #{p.notes}
+  include post.pug
